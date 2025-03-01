@@ -55,3 +55,10 @@ export const cardDeck = [
     { suit: "spades", value: "Q" },
     { suit: "spades", value: "K" }
 ];
+
+export function getCardValue(card) {
+    if (!card || !card.value) return null; 
+
+    const cardValues = { "J": 10, "Q": 10, "K": 10, "A": 11 };
+    return cardValues[card.value] || parseInt(card.value, 10);
+}

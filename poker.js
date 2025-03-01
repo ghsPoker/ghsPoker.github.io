@@ -1,4 +1,6 @@
-import { cardDeck } from "./deck.js";
+import { cardDeck, getCardValue } from "./deck.js";
 
 var deck = cardDeck
-console.log(deck)
+for (i in deck.length) {
+    console.log(getCardValue(deck[i]))
+}
