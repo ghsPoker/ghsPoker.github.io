@@ -3,4 +3,6 @@ body {
 }
 .Card{
     margin: 23px;
+    width: 30px;
+    height: 50px;
 }
