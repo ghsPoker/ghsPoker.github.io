@@ -1,3 +1,3 @@
 function click() {
-    document.getElementById().innerHTML = "n' Abend"
+    document.getElementById('text').innerHTML = "n' Abend"
 }
