@@ -1,6 +1,6 @@
-import { cardDeck, getCardValue } from "./deck.js";
+import { cardDeck, getCardValue } from './modules/deck.mjs';
 
 var deck = cardDeck
 for (i in deck.length) {
-    console.log(getCardValue(deck[i]))
+    console.log(getCardValue({value: "K"}))
 }
