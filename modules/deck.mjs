@@ -62,3 +62,7 @@ export function getCardValue(card) {
     const cardValues = { "J": 10, "Q": 10, "K": 10, "A": 11 };
     return cardValues[card.value] || parseInt(card.value, 10);
 }
+
+export function pullCard(arr) {
+
+}
