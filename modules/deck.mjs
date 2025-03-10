@@ -57,16 +57,11 @@ export const cardDeck = [
 ];
 
 export function getCardValue(obj) {
-    if (!obj.value) return null; 
+    if (!obj || !obj.value) return null; 
 
     const cardValues = { "J": 10, "Q": 10, "K": 10, "A": 11 };
-<<<<<<< Updated upstream
-    return cardValues[card.value] || parseInt(card.value, 10);
+    return cardValues[obj.value] || parseInt(obj.value, 10);
 }
 
 export function pullCard(arr) {
-
-=======
-    return cardValues[obj.value] || parseInt(card.value, 10);
->>>>>>> Stashed changes
 }
