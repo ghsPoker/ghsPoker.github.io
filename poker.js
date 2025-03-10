@@ -1,7 +1,6 @@
-import { cardDeck, getCardValue } from './modules/deck.mjs';
+import { cardDeck, getCardValue, pullCard } from './modules/deck.mjs';
 
-cardDeck.splice(1)
-console.log(cardDeck)
-console.log(cardDeck[0])
-console.log(getCardValue(cardDeck[0]))
-console.log(cardDeck.length)
+let deck = cardDeck
+for (let i=0; i<10; i++); {
+    console.log(pullCard(deck))
+};

@@ -65,6 +65,14 @@ export function getCardValue(obj) {
     return cardValues[obj.value] || parseInt(obj.value, 10);
 }
 
-export function pullCard(arr) {
-    ri = randInt(arr.lenght)
+export function pullCard(arr){
+    if (!arr) return null;
+
+    let random = randInt(arr.length);
+    console.log(random);
+    console.log(arr.length);
+    let card = arr[random];
+    console.log(card);
+    arr.splice(random, 1);
+    return card;
 }
