@@ -1,14 +1,16 @@
+import {randInt} from "./random.mjs"
+
 export const cardDeck = [
-    { suit: "hearts", value: "A" },  ///0
-    { suit: "hearts", value: "2" },  ///1
-    { suit: "hearts", value: "3" },  ///2
-    { suit: "hearts", value: "4" },  ///3
-    { suit: "hearts", value: "5" },  ///4
-    { suit: "hearts", value: "6" },  ///5
-    { suit: "hearts", value: "7" },  ///6
-    { suit: "hearts", value: "8" },  ///7
-    { suit: "hearts", value: "9" },  ///8
-    { suit: "hearts", value: "10" }, ///9
+    { suit: "hearts", value: "A" },  ///00
+    { suit: "hearts", value: "2" },  ///01
+    { suit: "hearts", value: "3" },  ///02
+    { suit: "hearts", value: "4" },  ///03
+    { suit: "hearts", value: "5" },  ///04
+    { suit: "hearts", value: "6" },  ///05
+    { suit: "hearts", value: "7" },  ///06
+    { suit: "hearts", value: "8" },  ///07
+    { suit: "hearts", value: "9" },  ///08
+    { suit: "hearts", value: "10" }, ///09
     { suit: "hearts", value: "J" },  ///10
     { suit: "hearts", value: "Q" },  ///11
     { suit: "hearts", value: "K" },  ///12
@@ -64,4 +66,5 @@ export function getCardValue(obj) {
 }
 
 export function pullCard(arr) {
+    ri = randInt(arr.lenght)
 }
