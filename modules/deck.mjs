@@ -1,5 +1,3 @@
-import {randInt} from "./random.mjs"
-
 export const cardDeck = [
     { suit: "hearts", value: "A" },  ///00
     { suit: "hearts", value: "2" },  ///01
@@ -65,14 +63,11 @@ export function getCardValue(obj) {
     return cardValues[obj.value] || parseInt(obj.value, 10);
 }
 
-export function pullCard(arr){
+export function pullCard(arr) {
     if (!arr) return null;
 
-    let random = randInt(arr.length);
-    console.log(random);
-    console.log(arr.length);
+    let random = Math.floor(Math.random() * (arr.length - 1))
     let card = arr[random];
-    console.log(card);
     arr.splice(random, 1);
     return card;
 }
