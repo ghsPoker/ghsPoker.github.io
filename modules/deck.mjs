@@ -66,7 +66,7 @@ export function getCardValue(obj) {
 export function pullCard(arr) {
     if (!arr) return null;
 
-    let random = Math.floor(Math.random() * (arr.length - 1))
+    let random = Math.floor(Math.random() * arr.length)
     let card = arr[random];
     arr.splice(random, 1);
     return card;

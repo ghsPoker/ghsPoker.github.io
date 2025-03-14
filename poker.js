@@ -1,10 +1,13 @@
 import { cardDeck, getCardValue, pullCard } from './modules/deck.mjs';
 
 let deck = cardDeck
+let hand = []
 let i = 0
 while (i < 10) {
-    console.log(pullCard(deck))
+    hand.push(pullCard(deck))
     i += 1
 }
 
-console.log(deck.length)
+console.log(deck)
+console.log(hand)
+
