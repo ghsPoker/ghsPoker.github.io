@@ -1,20 +1,20 @@
 body {
     background-color: #012c0b;
 }
-.Card{
+.Card {
     rotate: 0deg;
 }
-.CardImage{
+.CardImage {
     width: 25%;
     height: auto;
 }
-#C0{
+#C0 {
     position: fixed;
     bottom:5%;
     right: 42%;
     rotate: -10deg;
 }
-#C1{
+#C1 {
     position: fixed;
     bottom:5%;
     right: 30%;
