@@ -66,8 +66,16 @@ export function getCardValue(card) {
 export function pullCard(arr) {
     if (!arr) return null;
 
-    rand = Math.floor(Math.random() * arr.length)
-    card = arr[rand]
+    let rand = Math.floor(Math.random() * arr.length)
+    let card = arr[rand]
     arr.splice(rand, 1)
     return card
+}
+
+export function getCardColor(obj) {
+    if (!obj || !obj.suit) return null;
+
+    if (obj.suit == "hearts" || obj.suit == "diamonds") return "red";
+    else return "black"
+
 }
