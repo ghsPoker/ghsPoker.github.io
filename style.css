@@ -4,9 +4,15 @@ body {
 
 .card {
     image-rendering: pixelated;
+    /*position: absolute;*/
+    right: 20%;
 }
 
 .cardBg {
+    
+}
+.cards
+{
     
 }
 
@@ -17,5 +23,5 @@ body {
 }
 
 #card2 {
-    left: 50%;
+    position: absolute;
 }
