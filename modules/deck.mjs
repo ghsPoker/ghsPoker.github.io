@@ -1,5 +1,5 @@
 export const cardDeck = [
-    { suit: "hearts", value: "A" },
+    { suit: "hearts", value: "Ace" },
     { suit: "hearts", value: "2" },
     { suit: "hearts", value: "3" },
     { suit: "hearts", value: "4" },
@@ -9,11 +9,11 @@ export const cardDeck = [
     { suit: "hearts", value: "8" },
     { suit: "hearts", value: "9" },
     { suit: "hearts", value: "10" },
-    { suit: "hearts", value: "J" },
-    { suit: "hearts", value: "Q" },
-    { suit: "hearts", value: "K" },
+    { suit: "hearts", value: "Jack" },
+    { suit: "hearts", value: "Queen" },
+    { suit: "hearts", value: "King" },
     
-    { suit: "diamonds", value: "A" },
+    { suit: "diamonds", value: "Ace" },
     { suit: "diamonds", value: "2" },
     { suit: "diamonds", value: "3" },
     { suit: "diamonds", value: "4" },
@@ -23,11 +23,11 @@ export const cardDeck = [
     { suit: "diamonds", value: "8" },
     { suit: "diamonds", value: "9" },
     { suit: "diamonds", value: "10" },
-    { suit: "diamonds", value: "J" },
-    { suit: "diamonds", value: "Q" },
-    { suit: "diamonds", value: "K" },
+    { suit: "diamonds", value: "Jack" },
+    { suit: "diamonds", value: "Queen" },
+    { suit: "diamonds", value: "King" },
     
-    { suit: "clubs", value: "A" },
+    { suit: "clubs", value: "Ace" },
     { suit: "clubs", value: "2" },
     { suit: "clubs", value: "3" },
     { suit: "clubs", value: "4" },
@@ -37,11 +37,11 @@ export const cardDeck = [
     { suit: "clubs", value: "8" },
     { suit: "clubs", value: "9" },
     { suit: "clubs", value: "10" },
-    { suit: "clubs", value: "J" },
-    { suit: "clubs", value: "Q" },
-    { suit: "clubs", value: "K" },
+    { suit: "clubs", value: "Jack" },
+    { suit: "clubs", value: "Queen" },
+    { suit: "clubs", value: "King" },
     
-    { suit: "spades", value: "A" },
+    { suit: "spades", value: "Ace" },
     { suit: "spades", value: "2" },
     { suit: "spades", value: "3" },
     { suit: "spades", value: "4" },
@@ -51,18 +51,23 @@ export const cardDeck = [
     { suit: "spades", value: "8" },
     { suit: "spades", value: "9" },
     { suit: "spades", value: "10" },
-    { suit: "spades", value: "J" },
-    { suit: "spades", value: "Q" },
-    { suit: "spades", value: "K" }
+    { suit: "spades", value: "Jack" },
+    { suit: "spades", value: "Queen" },
+    { suit: "spades", value: "King" }
 ];
 
 export function getCardValue(card) {
     if (!card || !card.value) return null; 
 
-    const cardValues = { "J": 10, "Q": 10, "K": 10, "A": 11 };
+    const cardValues = { "Jack": 10, "Queen": 10, "King": 10, "Ace": 11 };
     return cardValues[card.value] || parseInt(card.value, 10);
 }
 
 export function pullCard(arr) {
-    
+    if (!arr) return null;
+
+    rand = Math.floor(Math.random() * arr.length)
+    card = arr[rand]
+    arr.splice(rand, 1)
+    return card
 }
