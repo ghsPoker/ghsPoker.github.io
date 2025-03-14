@@ -1,7 +1,10 @@
 body {
     background-color: #ff0069;
 }
-.Card{
-    margin: 23px;
-    box-shadow: 30px 30px;
+.card{
+    position: absolute;
+    image-rendering: pixelated;
+    height: calc(37px * 5);
+    width: calc(27px * 5);
+    transform: translate(50px, 300px);   
 }
