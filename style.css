@@ -1,7 +1,22 @@
 body {
-    background-color: #ff0069;
+    background-color: #012c0b;
 }
 .Card{
-    margin: 23px;
-    box-shadow: 30px 30px;
+    rotate: 0deg;
+}
+.CardImage{
+    width: 25%;
+    height: auto;
+}
+#C0{
+    position: fixed;
+    bottom:5%;
+    right: 42%;
+    rotate: -10deg;
+}
+#C1{
+    position: fixed;
+    bottom:5%;
+    right: 30%;
+    rotate: 10deg;
 }
