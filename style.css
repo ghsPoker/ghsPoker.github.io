@@ -1,22 +1,20 @@
 body {
     background-color: #012c0b;
 }
-.Card {
-    rotate: 0deg;
+
+.card {
+    image-rendering: pixelated;
+    position: absolute;
 }
-.CardImage {
-    width: 25%;
-    height: auto;
+
+.cardBg {
+    position: absolute;
 }
-#C0 {
-    position: fixed;
-    bottom:5%;
-    right: 42%;
-    rotate: -10deg;
+
+.cardImg {
+    position: absolute;
 }
-#C1 {
-    position: fixed;
-    bottom:5%;
-    right: 30%;
-    rotate: 10deg;
+
+#card2 {
+    left: 50%;
 }
