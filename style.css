@@ -1,10 +1,50 @@
 body {
-    background-color: #ff0069;
+    background-color: #012c0b;
 }
-.card{
-    position: absolute;
+
+.card {
     image-rendering: pixelated;
-    height: calc(37px * 5);
-    width: calc(27px * 5);
-    transform: translate(50px, 300px);   
+    position: absolute;
+    width: 20%;
+    height: 16%;/*aspect ratio for cards doesn t work yet*/
+    box-shadow: 30px 30px 30px #011806;
+}
+
+.cards
+{
+    width: 100%;
+    height: 100%;
+}
+
+.tableCard {
+    image-rendering: pixelated;
+    position: absolute;/*continue here*/
+    width: 20%;
+    height: 16%;/*aspect ratio for cards doesn t work yet*/
+    box-shadow: 30px 30px 30px #011806;
+}
+.tableCards
+{
+    width: 70%;
+    height: 100%;
+    left: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardImg {
+    position: absolute;
+    width: 105%;/*mischa did the card textures wrong :/ they re too small...ty*/
+    height: auto;
+}
+
+#card0 {
+    top: 75%;
+    left: 32%;
+    rotate: -10deg;
+}
+#card1 {
+    top: 75%;
+    left: 46%;
+    rotate: 10deg;
 }
