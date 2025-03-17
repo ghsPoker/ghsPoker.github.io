@@ -51,3 +51,11 @@ body {
     left: 46%;
     rotate: 10deg;
 }
+.clickedOnCardAnim{
+    /*just a figet toy...but nessesary..*/
+    animation: hoverOver 0.2s forwards;
+}
+@keyframes hoverOver{
+    0%   {top:75%;}  
+    100% {top:74%;}
+}
