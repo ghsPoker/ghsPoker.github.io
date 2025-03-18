@@ -23,20 +23,26 @@ function cardSprite(obj, id = null) {//id =card0/1/2/3/4/5/6
         suitChild.src = suitDir;
     }
 }
-function clickedOnCard(obj,i)//basicly just a figet toy
+function clickedOnCard(obj,i,b)//basicly just a figet toy
 {
     obj.classList.add("clickedOnCardAnim");
-    if(i == 0)
+    const card1 = document.getElementById("card1");
+    const card0 = document.getElementById("card0");
+    if(i == 0 && b)
     {
-        const card1 = document.getElementById("card1");
         card1.classList.remove("clickedOnCardAnim");
+    }else if(b)
+    {
+        card0.classList.remove("clickedOnCardAnim");
     }else
     {
-        const card0 = document.getElementById("card0");
         card0.classList.remove("clickedOnCardAnim");
+        card1.classList.remove("clickedOnCardAnim");
     }
 }
 const card0 = document.getElementById('card0');
 const card1 = document.getElementById('card1');
-card0.addEventListener("click",function(){clickedOnCard(card0,0)});
-card1.addEventListener("click",function(){clickedOnCard(card1,1)});
+card0.addEventListener("mouseover",function(){clickedOnCard(card0,0,true)});
+card1.addEventListener("mouseover",function(){clickedOnCard(card1,1,true)});
+card0.addEventListener("mouseleave",function(){clickedOnCard(card0,0,false)});
+card1.addEventListener("mouseleave",function(){clickedOnCard(card1,1,false)});
