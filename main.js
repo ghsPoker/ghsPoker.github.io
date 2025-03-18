@@ -2,19 +2,25 @@
 
 
 window.onload = function() {
-    //called when window gets loaded
-    
-    
+    /*//called when window gets loaded
+    setTimeout(()=>{
+        //doing something after n sec
+        //cardSprite(pullCard(cardDeck),"card3");
+        alert("hello, i waited 5 seconds");
+    },5000);*/
 };
 
 
-function cardSprite(obj, id = null) {
+function cardSprite(obj, id = null) {//id =card0/1/2/3/4/5/6
     let suitDir = "./assets/" + obj.suit + "Background.png"
     let valueDir = "./assets/" + getCardColor(obj) + obj.value + ".png"
     //return suitDir, valueDir //for testing
     
     if (id) {
-        document.getElementById(id).src = suitDir
+        let valueChild = document.getElementById(id).querySelectorAll(".cardFg");//gets children
+        let suitChild = document.getElementById(id).querySelectorAll(".cardBg");//like the ones in my basement
+        valueChild.src = valueDir;
+        suitChild.src = suitDir;
     }
 }
 function clickedOnCard(obj,i)//basicly just a figet toy
