@@ -63,7 +63,7 @@ export function getCardValue(card) {
     return cardValues[card.value] || parseInt(card.value, 10);
 }
 
-export function pullCard(arr) {
+export function popRand(arr) {
     if (!arr) return null;
 
     let rand = Math.floor(Math.random() * arr.length)

@@ -1,13 +1,14 @@
-import { cardDeck, getCardValue, pullCard } from './modules/deck.mjs';
+import readline from 'node:readline';
 
-let deck = cardDeck
-let hand = []
-let i = 0
-while (i < 10) {
-    hand.push(pullCard(deck))
-    i += 1
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+});
+
+function input(prompt) {
+    rl.question(prompt, name => {
+        return name
+    });
 }
 
-console.log(deck)
-console.log(hand)
-
+input("gib ")
