@@ -52,7 +52,7 @@ body {
     rotate: 10deg;
 }
 .clickedOnCardAnim{
-    /*just a figet toy...but nessesary..*/
+    /*just a figdet toy...but necessary..*/
     animation: hoverOver 0.2s forwards;
 }
 @keyframes hoverOver{
