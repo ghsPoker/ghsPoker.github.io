@@ -1,6 +1,22 @@
 //import { cardDeck, getCardValue, pullCard, getCardColor } from './modules/deck.mjs';
 
 
+function logInUI()
+{
+    //window.location.href = "./logIn.html";
+    (async() =>
+        document.getElementById("cock").innerHtml = await fetch("https://ghs-poker-backend.onrender.com/user/log-in/", {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: 'exampleUser',
+                password: 'examplePassword'
+            })
+        })
+        );
+}
 window.onload = function() {
     /*//called when window gets loaded
     setTimeout(()=>{
