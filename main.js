@@ -1,12 +1,9 @@
 //import { cardDeck, getCardValue, pullCard, getCardColor } from './modules/deck.mjs';
 
 
-function logInUI()
+async function logInUI()
 {
-    alert("asd")
-    //window.location.href = "./logIn.html";
-    (async() =>
-        document.getElementById("cock").innerHtml = await fetch("https://ghs-poker-backend.onrender.com/user/sign-up/", {
+    alert(await fetch("https://ghs-poker-backend.onrender.com/user/sign-up/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -15,9 +12,9 @@ function logInUI()
                 username: 'exampleUser1',
                 password: 'examplePassword1'
             })
-        })
-        );
-}
+        }))
+};
+
 window.onload = function() {
     /*//called when window gets loaded
     setTimeout(()=>{
@@ -40,7 +37,7 @@ function cardSprite(obj, id = null) {//id =card0/1/2/3/4/5/6
         suitChild.src = suitDir;
     }
 }
-function clickedOnCard(obj,i,b)//basicly just a figet toy
+function clickedOnCard(obj,i,b)//basically just a fidget toy
 {
     obj.classList.add("clickedOnCardAnim");
     const card1 = document.getElementById("card1");
