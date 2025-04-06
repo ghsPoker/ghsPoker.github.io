@@ -3,16 +3,17 @@
 
 function logInUI()
 {
+    alert("asd")
     //window.location.href = "./logIn.html";
     (async() =>
-        document.getElementById("cock").innerHtml = await fetch("https://ghs-poker-backend.onrender.com/user/log-in/", {
+        document.getElementById("cock").innerHtml = await fetch("https://ghs-poker-backend.onrender.com/user/sign-up/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                username: 'exampleUser',
-                password: 'examplePassword'
+                username: 'exampleUser1',
+                password: 'examplePassword1'
             })
         })
         );
