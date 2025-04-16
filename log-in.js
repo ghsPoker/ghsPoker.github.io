@@ -1,4 +1,4 @@
-const server = "https://ghs-poker-backend.onrender.com"
+const server = "https://ghs-poker-backend.onrender.com/user/log-in/"
 
 async function logIn() {
     const username = document.getElementById("username").value
