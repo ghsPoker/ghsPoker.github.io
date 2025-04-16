@@ -10,5 +10,3 @@ function input(prompt) {
         return name
     });
 }
-
-input("gib ")
