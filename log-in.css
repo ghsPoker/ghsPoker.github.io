@@ -1,3 +1,37 @@
-b {
-    color: #8b2733;
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #123456;
+}
+
+#box {
+    height: 70vh;
+    width: 60vh;
+
+    background-color: #ffffff;
+    border-radius: 3vh;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.button {
+    height: 3vh;
+    width: 12vh;
+    background-color: #123456;
+    border: none;
 }

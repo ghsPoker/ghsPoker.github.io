@@ -6,14 +6,20 @@
         <script src="log-in.js"></script>
     </head>
     <body>
-        <div>
-            <input id="username" type="text" placeholder="Username">
-            <input id="password" type="password" placeholder="Password">
-            <button id="log-in" onclick="logIn()">Log In</button>
-        </div>
-        <div>
-            <b>No account?</b>
-            <a href="sign-up.html">Sign Up</a>
+        <div id="content">
+            <div id="box">
+                <div id="form">
+                    <input class="form" id="username" type="text" placeholder="Username">
+                    <br>
+                    <input class="form" id="password" type="password" placeholder="Password">
+                    <br>
+                    <button class="button" id="log-in" onclick="logIn()">Log In</button>
+                </div>
+                <div id="anchor">
+                    <b>Don't have an account?</b>
+                    <a href="sign-up.html">Sign Up</a>
+                </div>
+            </div>
         </div>
     </body>
 </html>
