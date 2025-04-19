@@ -2,24 +2,27 @@
 <html>
     <head>
         <title> Log in</title>
+
+
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="log-in.css">
-        <script src="log-in.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="content">
-            <div id="box">
-                <div id="form">
-                    <input class="form" id="username" type="text" placeholder="Username">
-                    <br>
-                    <input class="form" id="password" type="password" placeholder="Password">
-                    <br>
-                    <button class="button" id="log-in" onclick="logIn()">Log In</button>
-                </div>
-                <div id="anchor">
-                    <b>Don't have an account?</b>
-                    <a href="sign-up.html">Sign Up</a>
-                </div>
-            </div>
+        <div id="cursor"></div>
+        <script src="cursor.js"></script>
+
+        <div id="form">
+            <img src="logo.png" alt="logo.png">
+            <p class="gradient-font title"></p>
+            <input id="username" type="text" placeholder="Username">
+            <input id="password" type="password" placeholder="Password">
+            <button class="title gradient-font" onclick="logIn()">Log In</button>
+            <script src="log-in.js"></script>
         </div>
     </body>
 </html>

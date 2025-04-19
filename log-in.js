@@ -1,11 +1,13 @@
 const server = "https://ghs-poker-backend.onrender.com/user/log-in/"
 
+const username = document.getElementById("username")
+const password = document.getElementById("password")
+
 async function logIn() {
-    const username = document.getElementById("username").value
-    const password = document.getElementById("password").value
+    console.log(username.value)
 
-    alert('Hello', username)
 
+    /*
     await fetch(server, {
         method: 'POST',
         headers: {
@@ -16,4 +18,5 @@ async function logIn() {
             password: password
         })
     })
+    */
 }
