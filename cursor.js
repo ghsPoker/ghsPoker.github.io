@@ -1,5 +1,9 @@
 const cursor = document.getElementById("cursor")
 
-const e = window.onmousemove;
+addEventListener('mousemove', (e)=>{
+    const x = e.clientX;
+    const y = e.clientY;
 
-console.log(e.clientX)
+    cursor.style.left = `${x}px`;
+    cursor.style.top = `${y}px`;
+})

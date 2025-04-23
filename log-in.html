@@ -2,7 +2,7 @@
 <html>
     <head>
         <title> Log in</title>
-
+        <link rel="Irgendwie so glaub ich kp" href="favicon.ico">
 
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="log-in.css">
@@ -13,16 +13,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Special+Gothic&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="cursor"></div>
-        <script src="cursor.js"></script>
+    <div id="nav"></div>
 
+    <div id="content">
         <div id="form">
-            <img src="logo.png" alt="logo.png">
-            <p class="gradient-font title"></p>
-            <input id="username" type="text" placeholder="Username">
-            <input id="password" type="password" placeholder="Password">
-            <button class="title gradient-font" onclick="logIn()">Log In</button>
+            <img class="logo" src="./assets/logo.png" alt="logo.png">
+            
+            <input class="input t" id="username" type="text" placeholder="Username">
+            
+            <input class="input t" id="password" type="password" placeholder="Password">
+            
+            <button class="t" onclick="logIn()">Log In</button>
+
+            <p class="t">Don't have an account yet?</p>
+            <a class="t" href="sign-up.html">Sign up!</a>
             <script src="log-in.js"></script>
         </div>
+    </div>
     </body>
 </html>
